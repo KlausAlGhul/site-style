@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <title><?php echo $config['s_name'] ?> — <?php echo $page; ?> </title>
+    
+    <base href="<?php echo BASE_URL ?>"> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo $config['s_about'] ?>">
+    <meta name="author" content="MarineStudio"><!-- Разработано студией MarineStudio - vk.com/marinestudio -->
+	
+<!--	$$$$$$$__$$$$$$$__$$____$$__$$$$$$$__$$$$$$__$$$$$$$$     -->
+<!--    $$___$$__$$___$$__$$__$$$$__$$___$$__$$_________$$        -->
+<!--    $$___$$__$$$$$$$__$$$$$_$$__$$$$$$$__$$$$$$_____$$        -->
+<!--    $$___$$__$$_______$$$___$$__$$___$$__$$_________$$        -->
+<!--    $$___$$__$$_______$$____$$__$$$$$$$__$$$$$$_____$$        -->
+
+    <link href="<?php View::URL('css/style.css') ?>" rel="stylesheet">
+    <link href="<?php View::URL('css/serverbar.css') ?>" rel="stylesheet">
+    
+    <?php echo $content_js ?>
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="instruments/rss20/rss.php" />
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="<?php View::URL('ico/favicon.ico') ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php View::URL('ico/apple-touch-icon-144-precomposed.png') ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php View::URL('ico/apple-touch-icon-114-precomposed.png') ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php View::URL('ico/apple-touch-icon-72-precomposed.png') ?>">
+    <link rel="apple-touch-icon-precomposed" href="<?php View::URL('ico/apple-touch-icon-57-precomposed.png') ?>">
+    <link media="screen" href="<?php View::URL('css/slider/slider.css') ?>" type="text/css" rel="stylesheet" />
+</head>
+
+</br></br></br>
+
+
+ </div> </div></div></div></div></div>
+
+<div class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+
+
+
+        <div class="container">
+
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          <!--<a class="brand" href=""><?php echo $config['s_name'] ?></a>-->
+          
+          <div class="nav-collapse collapse">
+
+             <?php echo $content_menu; ?>
+             
+          </div>
+
+        </div>
+      </div>
+      
+</div>
+    
+<!-- END -->
+<div class="container"> 
+    <div class="container-fluid">
+            <div class="row-fluid">
+            <!-- Левый контейнер -->                
+            
+                <div class="span8"> 
+                    <?php echo $content_main;?>     
+        
+                    <div class="inform-block" style="display: none;" id="main-error">
+                       <div class="alert alert-error" id="main-error-text"></div>
+                    </div>
+                </div>
+
+                <!-- /.Левый контейнер -->
+
+                <!-- Правый контейнер -->
+
+                <div class="span4">     
+<a href="?mode=start"><div class="downbut">Скачать лаунчер</div></a>
+
+                    <?php echo $content_side ?>
+
+                    <?php echo $content_servers ?>
+<div class="form-block-rl">
+<div class="block-header">Вконтакте</div>
+<div class="block-line"></div>
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+	<!-- VK Widget -->
+	<div id="vk_groups"></div>
+	<script type="text/javascript">
+	VK.Widgets.Group("vk_groups", {mode: 4, width: "auto", height: "400"}, 178186381);
+	</script>
+</div>
+                                                 
+                </div>
+            <!-- /.Правый контейнер  -->
+    </div> 
+</div>
+</div>
+    <!-- /container -->
+    
+
+    
+    <script src="<?php View::URL('js/smiles.js') ?>"></script>  
+    <script src="<?php View::URL('js/tools.js') ?>"></script>
+
+    <script src="<?php View::URL('js/monitoring.js') ?>"></script>
+    <script src="<?php View::URL('js/ajax.js') ?>"></script>
+     
+    <script src="<?php View::URL('js/bootstrap-without-jquery.js') ?>"></script>
+
+    <script language="javascript" type="text/javascript" src="<?php View::URL('js/slider/jquery.js') ?>"></script>
+    <script language="javascript" type="text/javascript" src="<?php View::URL('js/slider/jquery.easing.js') ?>"></script>
+    <script language="javascript" type="text/javascript" src="<?php View::URL('js/slider/script.js') ?>"></script>
+    
+    <script type="text/javascript">
+    $(document).ready( function()
+    { 
+        var buttons = { previous:$('#jslidernews2 .button-previous'), next:$('#jslidernews2 .button-next') };          
+        $('#jslidernews2').lofJSidernews( 
+            { 
+                interval:5000,
+                easing:'easeInOutQuad',
+                duration:1200,
+                auto:true,
+                mainWidth:725,
+                mainHeight:400,
+                navigatorHeight     : 100,
+                navigatorWidth      : 420,
+                maxItemDisplay:3,
+                buttons:buttons 
+            });                        
+    });
+    </script>
+
+  </body>
+</html>    

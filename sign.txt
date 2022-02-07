@@ -1,0 +1,5 @@
+﻿name=Start - MarineStudio; 
+version=1.0; 
+author=MarineStudio; 
+about=Наша группа https://vk.com/marinestudio; 
+editable=no; 
